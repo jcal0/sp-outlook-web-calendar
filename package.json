@@ -1,0 +1,18 @@
+{
+  "name": "sp-outlook-web-calendar",
+  "version": "0.1.0",
+  "description": "Super Productivity plugin + Chrome extension that show your Outlook on the web meetings in the Super Productivity schedule",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "try-sync": "esbuild scripts/try-sync.ts --bundle --platform=node --format=cjs --log-level=warning --outfile=.tmp/try-sync.cjs && node .tmp/try-sync.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Super Productivity Outlook Sync",
+  "version": "0.1.0",
+  "description": "Sends the Outlook on the web calendar week you open to the Super Productivity Outlook plugin on this computer.",
+  "host_permissions": ["http://127.0.0.1:39217/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://outlook.office.com/calendar/*",
+        "https://outlook.office365.com/calendar/*",
+        "https://outlook.live.com/calendar/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

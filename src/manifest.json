@@ -1,0 +1,22 @@
+{
+  "id": "outlook-web-calendar",
+  "name": "Outlook Web Calendar",
+  "version": "0.1.0",
+  "description": "Desktop: shows this week's Outlook on the web meetings in the schedule. Sync opens Outlook in Chrome, where the companion extension reads the week; meetings stay on this device.",
+  "manifestVersion": 1,
+  "minSupVersion": "19.0.0",
+  "type": "issueProvider",
+  "icon": "icon.svg",
+  "iFrame": false,
+  "permissions": ["nodeExecution", "showSnack", "openDialog", "getConfig"],
+  "hooks": [],
+  "jsonSchemaCfg": "config-schema.json",
+  "issueProvider": {
+    "pollIntervalMs": 30000,
+    "icon": "calendar",
+    "humanReadableName": "Outlook Web",
+    "issueStrings": { "singular": "Meeting", "plural": "Meetings" },
+    "useAgendaView": true,
+    "defaultAutoAddToBacklog": false
+  }
+}

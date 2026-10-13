@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Outlook Web Calendar",
+  "type": "object",
+  "properties": {
+    "calendarUrl": {
+      "type": "string",
+      "title": "Calendar week URL",
+      "description": "Opened in Chrome on sync. Work accounts: https://outlook.office.com/calendar/view/week (or /view/workweek). Personal accounts: https://outlook.live.com/calendar/0/view/week",
+      "default": "https://outlook.office.com/calendar/view/week"
+    }
+  }
+}
