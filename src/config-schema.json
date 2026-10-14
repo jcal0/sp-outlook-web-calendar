@@ -6,7 +6,7 @@
     "calendarUrl": {
       "type": "string",
       "title": "Calendar week URL",
-      "description": "Opened in Chrome on sync. Work accounts: https://outlook.office.com/calendar/view/week (or /view/workweek). Personal accounts: https://outlook.live.com/calendar/0/view/week",
+      "description": "Opened in Chrome on sync. Work accounts: https://outlook.office.com/calendar/view/week (or /view/workweek); it may redirect to outlook.cloud.microsoft, which is fine. Personal accounts: https://outlook.live.com/calendar/0/view/week",
       "default": "https://outlook.office.com/calendar/view/week"
     }
   }

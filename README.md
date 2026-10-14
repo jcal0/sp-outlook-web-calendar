@@ -43,11 +43,16 @@ Download both zips from the [latest release](../../releases/latest).
    `outlook-web-calendar-plugin-vX.Y.Z.zip`.
 2. In the plugin's settings, set **Calendar week URL**:
    - work or school accounts: `https://outlook.office.com/calendar/view/week`
-     (or `/view/workweek`)
+     (or `/view/workweek`); it may redirect to `outlook.cloud.microsoft`, which works too
    - personal accounts: `https://outlook.live.com/calendar/0/view/week`
 3. Open the **issue provider panel** (press `P`, or click the webhook icon in the header).
    Under **Connect Calendar**, choose **Outlook Web Calendar** (not "Outlook 365") and
    save. Leave auto-import as tasks off if you want meetings to stay calendar events.
+
+   Connect it **once**. Each save from the Connect Calendar tile adds another
+   connection, and every connection shows the same meetings, so you'd see each meeting
+   several times. To change settings later, use the gear icon on the Outlook Web Calendar
+   tab in that panel; to remove duplicates, open each extra tab's gear icon → Delete.
 
 **Chrome extension**
 

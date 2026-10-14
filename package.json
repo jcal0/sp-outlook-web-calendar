@@ -1,6 +1,6 @@
 {
   "name": "sp-outlook-web-calendar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Super Productivity plugin + Chrome extension that show your Outlook on the web meetings in the Super Productivity schedule",
   "private": true,
   "license": "MIT",

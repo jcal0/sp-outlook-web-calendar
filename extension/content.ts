@@ -24,7 +24,8 @@ const tick = (): void => {
     watchUntil = Date.now() + WATCH_MS;
     calendarSince = 0;
   }
-  if (Date.now() > watchUntil) return;
+  // The extension runs on all of Outlook (Mail too), so check the cheap URL first.
+  if (Date.now() > watchUntil || !/\/calendar/.test(location.pathname)) return;
 
   const state = collectLabels();
   if (state.isLogin || !state.isCalendar) {
